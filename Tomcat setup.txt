@@ -1,0 +1,31 @@
+pwd
+cd devtools
+mv \users\Downloads\apache-tomcat-8.5.31.tar.gz . (\users\gonga\devtools)
+ls -lrt
+tar xvzf apach-8.zip
+mv apac-8 tomcat8
+cd tomcat8
+ls -lrta
+
+--------open the folder list in ATOM
+
+edit conf tomcat-users.xml
+
+  <role rolename="tomcat"/>
+  <role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <user username="tomcat" password="root" roles="tomcat"/>
+  <user username="tomcat" password="root" roles="tomcat,manager-gui"/
+  <user username="tomcat" password="root" roles="tomcat,manager-script"/>
+
+go to cmder
+pwd
+c:\Users\gonga\devtools\tomcat8
+cd bin
+C:\Users\gonga\devtools\tomcat8\bin
+.\version.bat - for windows
+.\startup.bat  - to start tomcat server
+
+ipconfig - get ip address for windows
+
+http://172.XX.XX.XX:8080/
